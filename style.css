@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background: url(bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profil-card {
+    width: 400px;
+    text-align: center;
+
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-header {
+    background: linear-gradient(130deg, #006aef, #ffd6ff);
+    padding: 60px 40px;
+}
+
+.picture img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.picture {
+    display: inline-block;
+    padding: 12px;
+    background: linear-gradient(130deg, #006aef, #ffd6ff);
+    margin: auto;
+    border-radius: 50%;
+    animation: animasyon 2s linear infinite;
+    background-size: 200% 200%;
+
+}
+
+@keyframes animasyon {
+    25% {
+        background-position: left bottom;
+    }
+
+    50% {
+        background-position: right bottom;
+    }
+
+    75% {
+        background-position: right top;
+    }
+
+    100% {
+        background-position: left top;
+    }
+
+}
+
+.name {
+    color: #ffd6ff;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.desc {
+    font-size: 18px;
+    color: #52dce2;
+}
+
+.sm {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+}
+
+.sm a {
+    color: #f2f2f2;
+    width: 46px;
+    font-size: 28px;
+    transition: .3s linear;
+}
+
+.sm a:hover {
+    color: #52dce2;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 50px;
+    color: #ffd6ff;
+    border: 2px solid #ffd6ff;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: .3s linear;
+}
+
+.contact-btn:hover {
+    background: #00b0e2;
+    color: #bdffec;
+}
+
+.card-footer {
+    background-color: #ffd6ff;
+    padding: 60px 10px;
+
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    flex: 1;
+    font-size: 13px;
+    color: #008ae0;
+    text-transform: uppercase;
+}
+
+.item span {
+    display: block;
+    font-size: 30px;
+
+}
